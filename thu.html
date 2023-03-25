@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #them{
+            color: blue;
+        }
+    </style>
 </head>
+
 <body>
     
+    
+    <h1>THU SUA CHUA</h1>
+    <h1>THU SUA CHUA</h1>
+    <h3 id="them"></h3>
+    <h3>thu them bot noi dung vao
+        ta co mot so noi dung nhu sau, ta se cho chay thu xem no nhu the nao <br />
+        de con biet va chinh xua lai cho no that la dep cac ban a , <br />
+        xua lai cay cau truoc cua nha tro cua ban
+    </h3>
+
+    <script>
+
+        const initialScale = () => {
+            const abc = 4
+            const scale = []
+            for (let i = 0; i < 6; i++) {
+                if (i <= abc) {
+                    scale.push('em xau qua')
+                }
+                else {
+                    scale.push('em dep hon')
+                }
+            }
+            return scale          
+        }
+        document.getElementById('them').innerHTML = initialScale() 
+        console.log(initialScale())
+                
+    </script>
+
 </body>
+
 </html>
-<h1>THU SUA CHUA</h1>
-<h1>THU SUA CHUA</h1>
-<h3>thu them bot noi dung vao</h3>
