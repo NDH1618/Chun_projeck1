@@ -9,6 +9,15 @@
     <style>
         #them{
             color: blue;
+            display: flex;
+        }
+        #them:hover{
+            color: blueviolet;
+        }
+        #them h2{
+            padding: 0px 5px;
+            margin: 5px 10px;
+            border: 1px solid black;
         }
     </style>
 </head>
@@ -30,6 +39,7 @@
         const initialScale = () => {
             const abc = 4
             const scale = []
+            let em = ''
             for (let i = 0; i < 6; i++) {
                 if (i <= abc) {
                     scale.push('em xau qua')
@@ -38,7 +48,11 @@
                     scale.push('em dep hon')
                 }
             }
-            return scale          
+            for (let l = 0; l < scale.length; l++) {
+                em += `<h2>${scale[l]}</h2>`
+            }
+            return em
+            console.log(em)         
         }
         document.getElementById('them').innerHTML = initialScale() 
         console.log(initialScale())
